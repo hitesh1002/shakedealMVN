@@ -2,41 +2,41 @@
 <testng-results skipped="0" failed="1" total="3" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="152746" started-at="2018-10-04T08:25:31Z" finished-at="2018-10-04T08:28:04Z">
+  <suite name="Default suite" duration-ms="77208" started-at="2018-10-04T11:45:34Z" finished-at="2018-10-04T11:46:51Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="152746" started-at="2018-10-04T08:25:31Z" finished-at="2018-10-04T08:28:04Z">
-      <class name="Report.TestCase1">
-        <test-method status="PASS" signature="setUp()[pri:0, instance:Report.TestCase1@5c3bd550]" name="setUp" is-config="true" duration-ms="451" started-at="2018-10-04T13:55:31Z" finished-at="2018-10-04T13:55:31Z">
+    <test name="Default test" duration-ms="77208" started-at="2018-10-04T11:45:34Z" finished-at="2018-10-04T11:46:51Z">
+      <class name="Report.LoginTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Report.LoginTest@91161c7]" name="setUp" is-config="true" duration-ms="344" started-at="2018-10-04T17:15:34Z" finished-at="2018-10-04T17:15:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method status="PASS" signature="StartUp()[pri:0, instance:Report.TestCase1@5c3bd550]" name="StartUp" is-config="true" duration-ms="13662" started-at="2018-10-04T13:55:31Z" depends-on-methods="Report.Base.setUp" finished-at="2018-10-04T13:55:45Z">
+        <test-method status="PASS" signature="StartUp()[pri:0, instance:Report.LoginTest@91161c7]" name="StartUp" is-config="true" duration-ms="10628" started-at="2018-10-04T17:15:34Z" depends-on-methods="Report.BaseTest.setUp" finished-at="2018-10-04T17:15:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- StartUp -->
-        <test-method status="FAIL" signature="Login()[pri:0, instance:Report.TestCase1@5c3bd550]" name="Login" duration-ms="55735" started-at="2018-10-04T13:55:45Z" finished-at="2018-10-04T13:56:41Z">
+        <test-method status="FAIL" signature="Login()[pri:0, instance:Report.LoginTest@91161c7]" name="Login" duration-ms="30867" started-at="2018-10-04T17:15:45Z" finished-at="2018-10-04T17:16:16Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Unable to locate element: {"method":"xpath","selector":"/div/div/div/div/div/div/div/form/div[2]/div/button"}
-Command duration or timeout: 10.35 seconds
+Command duration or timeout: 10.16 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'HiteshKumar', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: df420e62-9a1f-471c-9ef0-f0952f844356
+Session ID: 827140c8-d727-4aca-a9f8-7bcb4120d669
 *** Element info: {Using=xpath, value=/div/div/div/div/div/div/div/form/div[2]/div/button}]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.NoSuchElementException: Unable to locate element: {"method":"xpath","selector":"/div/div/div/div/div/div/div/form/div[2]/div/button"}
-Command duration or timeout: 10.35 seconds
+Command duration or timeout: 10.16 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'HiteshKumar', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: org.openqa.selenium.firefox.FirefoxDriver
 Capabilities [{applicationCacheEnabled=true, rotatable=false, handlesAlerts=true, databaseEnabled=true, version=47.0.1, platform=WINDOWS, nativeEvents=false, acceptSslCerts=true, webStorageEnabled=true, locationContextEnabled=true, browserName=firefox, takesScreenshot=true, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: df420e62-9a1f-471c-9ef0-f0952f844356
+Session ID: 827140c8-d727-4aca-a9f8-7bcb4120d669
 *** Element info: {Using=xpath, value=/div/div/div/div/div/div/div/form/div[2]/div/button}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -49,7 +49,7 @@ Session ID: df420e62-9a1f-471c-9ef0-f0952f844356
 	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:500)
 	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
-	at Report.TestCase1.Login(TestCase1.java:36)
+	at Report.LoginTest.Login(LoginTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -79,60 +79,60 @@ For documentation on this error, please visit: http://seleniumhq.org/exceptions/
 Build info: version: '2.53.1', revision: 'a36b8b1cd5757287168e54b817830adce9b0158d', time: '2016-06-30 19:26:09'
 System info: host: 'HiteshKumar', ip: '192.168.56.1', os.name: 'Windows 10', os.arch: 'amd64', os.version: '10.0', java.version: '1.8.0_131'
 Driver info: driver.version: unknown
-	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Hitesh/AppData/Local/Temp/anonymous1862657554840470653webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
-	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Hitesh/AppData/Local/Temp/anonymous1862657554840470653webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
+	at <anonymous class>.FirefoxDriver.prototype.findElementInternal_(file:///C:/Users/Hitesh/AppData/Local/Temp/anonymous7395556651295342042webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:10770)
+	at <anonymous class>.fxdriver.Timer.prototype.setTimeout/<.notify(file:///C:/Users/Hitesh/AppData/Local/Temp/anonymous7395556651295342042webdriver-profile/extensions/fxdriver@googlecode.com/components/driver-component.js:625)
 ]]>
             </full-stacktrace>
           </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Report.TestCase1@5c3bd550]" name="getResult" is-config="true" duration-ms="389" started-at="2018-10-04T13:56:41Z" finished-at="2018-10-04T13:56:41Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Report.LoginTest@91161c7]" name="getResult" is-config="true" duration-ms="292" started-at="2018-10-04T17:16:16Z" finished-at="2018-10-04T17:16:16Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login status=FAILURE method=TestCase1.Login()[pri:0, instance:Report.TestCase1@5c3bd550] output={null}]]]>
+                <![CDATA[[TestResult name=Login status=FAILURE method=LoginTest.Login()[pri:0, instance:Report.LoginTest@91161c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="SearchProduct()[pri:0, instance:Report.TestCase1@5c3bd550]" name="SearchProduct" duration-ms="19303" started-at="2018-10-04T13:56:41Z" finished-at="2018-10-04T13:57:00Z">
+        <test-method status="PASS" signature="SearchProduct()[pri:0, instance:Report.LoginTest@91161c7]" name="SearchProduct" duration-ms="12063" started-at="2018-10-04T17:16:16Z" finished-at="2018-10-04T17:16:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- SearchProduct -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Report.TestCase1@5c3bd550]" name="getResult" is-config="true" duration-ms="36435" started-at="2018-10-04T13:57:00Z" finished-at="2018-10-04T13:57:37Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Report.LoginTest@91161c7]" name="getResult" is-config="true" duration-ms="13082" started-at="2018-10-04T17:16:28Z" finished-at="2018-10-04T17:16:41Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=SearchProduct status=SUCCESS method=TestCase1.SearchProduct()[pri:0, instance:Report.TestCase1@5c3bd550] output={null}]]]>
+                <![CDATA[[TestResult name=SearchProduct status=SUCCESS method=LoginTest.SearchProduct()[pri:0, instance:Report.LoginTest@91161c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="VerifyTitle()[pri:0, instance:Report.TestCase1@5c3bd550]" name="VerifyTitle" duration-ms="20148" started-at="2018-10-04T13:57:37Z" finished-at="2018-10-04T13:57:57Z">
+        <test-method status="PASS" signature="VerifyTitle()[pri:0, instance:Report.LoginTest@91161c7]" name="VerifyTitle" duration-ms="6269" started-at="2018-10-04T17:16:41Z" finished-at="2018-10-04T17:16:47Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- VerifyTitle -->
-        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Report.TestCase1@5c3bd550]" name="getResult" is-config="true" duration-ms="5703" started-at="2018-10-04T13:57:57Z" finished-at="2018-10-04T13:58:03Z">
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Report.LoginTest@91161c7]" name="getResult" is-config="true" duration-ms="2934" started-at="2018-10-04T17:16:47Z" finished-at="2018-10-04T17:16:50Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=VerifyTitle status=SUCCESS method=TestCase1.VerifyTitle()[pri:0, instance:Report.TestCase1@5c3bd550] output={null}]]]>
+                <![CDATA[[TestResult name=VerifyTitle status=SUCCESS method=LoginTest.VerifyTitle()[pri:0, instance:Report.LoginTest@91161c7] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:Report.TestCase1@5c3bd550]" name="tearDown" is-config="true" duration-ms="873" started-at="2018-10-04T13:58:03Z" finished-at="2018-10-04T13:58:04Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Report.LoginTest@91161c7]" name="tearDown" is-config="true" duration-ms="679" started-at="2018-10-04T17:16:50Z" finished-at="2018-10-04T17:16:51Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- Report.TestCase1 -->
+      </class> <!-- Report.LoginTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

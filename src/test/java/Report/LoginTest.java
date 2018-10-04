@@ -1,16 +1,18 @@
 package Report;
 
 import static org.testng.Assert.assertEquals;
-
 import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.By;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
 
-public class TestCase1 extends Base {
+import com.aventstack.extentreports.Status;
+import com.aventstack.extentreports.markuputils.ExtentColor;
+import com.aventstack.extentreports.markuputils.MarkupHelper;
+
+public class LoginTest extends BaseTest {
 	
 	@BeforeTest
 	public void StartUp() {
@@ -46,6 +48,4 @@ public class TestCase1 extends Base {
 	}
 	
 	
-	
-
 }
