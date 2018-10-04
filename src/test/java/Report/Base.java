@@ -22,13 +22,15 @@ import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
+import Utilities.CaptureScreenShot;
+
 	public class Base {
 		
 		WebDriver driver;
 		ExtentReports reports;
 		ExtentHtmlReporter htmlReporter;
 		ExtentTest test;
-	
+		
 	@BeforeTest
 	public void setUp() {
 		
@@ -46,29 +48,40 @@ import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 		
 	}
 	
-	@BeforeMethod
+/*	@BeforeMethod
 	public void StartUp() {
 		driver = new FirefoxDriver(); 		
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 	}
 	
 	@Test
-	public void LoginPage() {	
-		test = reports.createTest("Login Page");
+	public void VerifyTitle() {	
+		test = reports.createTest("verifyTitle");
 		driver.get("https://shakedeal.com");
 		String title = driver.getTitle();
 		assertEquals("ShakeDeal - Procurement Made Easy | Home of B2B Commerce", title);
 	}	
 	
+	@Test
+	public void Login() {
+		test = reports.createTest("Verify Login Panel");
+		driver.findElement(By.xpath(".//*[@id='sw_dropdown_764']/a/div")).click();
+		driver.findElement(By.xpath(".//*[@id='email']")).sendKeys("hitesh.kumar@onjection.com");
+		driver.findElement(By.xpath(".//*[@id='password']")).sendKeys("hitesh@123");
+		driver.findElement(By.xpath(".//*[@id='tygh_main_container']/div[3]/div/div/div/div/div/div/div[2]/div[1]/div/form/div[2]/div/button")).click();
+				
+	}
+	*/
+	
 	@AfterMethod
 	public void getResult(ITestResult result) throws IOException {
 		
-		//	String screenShot = CaptureScreenShot.captureScreen(driver, CaptureScreenShot.generateFileName(result)); 
+		String screenShot = CaptureScreenShot.captureScreen(driver, CaptureScreenShot.generateFileName(result)); 
 			
 					if(result.getStatus() == ITestResult.FAILURE) {	
 						test.log(Status.FAIL, result.getName());
 						test.log(Status.SKIP, result.getThrowable());
-				//		test.fail("Screen Shot :" +test.addScreenCaptureFromPath(screenShot));
+						test.fail("Screen Shot :" +test.addScreenCaptureFromPath(screenShot));
 						
 					}else if(result.getStatus() == ITestResult.SUCCESS) {
 						test.log(Status.PASS, result.getName());
