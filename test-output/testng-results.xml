@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="65339" started-at="2018-10-04T06:42:54Z" finished-at="2018-10-04T06:44:00Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="65339" started-at="2018-10-04T06:42:54Z" finished-at="2018-10-04T06:44:00Z">
+      <class name="Report.Base">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:Report.Base@5c3bd550]" name="setUp" is-config="true" duration-ms="546" started-at="2018-10-04T12:12:54Z" finished-at="2018-10-04T12:12:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="StartUp()[pri:0, instance:Report.Base@5c3bd550]" name="StartUp" is-config="true" duration-ms="13616" started-at="2018-10-04T12:12:55Z" finished-at="2018-10-04T12:13:08Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- StartUp -->
+        <test-method status="PASS" signature="LoginPage()[pri:0, instance:Report.Base@5c3bd550]" name="LoginPage" duration-ms="50297" started-at="2018-10-04T12:13:08Z" finished-at="2018-10-04T12:13:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- LoginPage -->
+        <test-method status="PASS" signature="getResult(org.testng.ITestResult)[pri:0, instance:Report.Base@5c3bd550]" name="getResult" is-config="true" duration-ms="33" started-at="2018-10-04T12:13:59Z" finished-at="2018-10-04T12:13:59Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=LoginPage status=SUCCESS method=Base.LoginPage()[pri:0, instance:Report.Base@5c3bd550] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- getResult -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:Report.Base@5c3bd550]" name="tearDown" is-config="true" duration-ms="822" started-at="2018-10-04T12:13:59Z" finished-at="2018-10-04T12:14:00Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- Report.Base -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
